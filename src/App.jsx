@@ -10,7 +10,7 @@ import Home from "./pages/Home";
 function App() {
   return (
     <div>
-      <Home />
+      <h2>Demo app</h2>
     </div>
   );
 }
