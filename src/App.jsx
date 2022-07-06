@@ -1,25 +1,16 @@
-import { useState } from 'react';
-import './App.scss';
-import Header from './components/header/Header';
+import { useState } from "react";
+import "./App.scss";
+import Header from "./components/header/Header";
 
-import { BrowserRouter, Route } from 'react-router-dom';
-import Routes from './config/Routes';
-import Footer from './components/footer/Footer';
+import { BrowserRouter, Route } from "react-router-dom";
+import Routes from "./config/Routes";
+import Footer from "./components/footer/Footer";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <div>
-      <BrowserRouter>
-        <Route
-          render={(props) => (
-            <>
-              <Header></Header>
-              <Routes></Routes>
-              <Footer></Footer>
-            </>
-          )}
-        ></Route>
-      </BrowserRouter>
+      <Home />
     </div>
   );
 }
